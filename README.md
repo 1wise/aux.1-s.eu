@@ -1,5 +1,5 @@
-ARSENAL W.A.N. - Hybrid USB Key Deployment Guide[!] 
-NOTICE FOR WINDOWS & MAC USERS (EASY MODE) > If you are a standard user and just want to create the bootable USB, you do not need to compile anything. Please scroll down to the [Quick Flash Guide (Windows/macOS)](https://www.google.com/search?q=%23quick-flash-guide-windowsmacos) at the bottom of this document to download and flash the pre-built image in 2 minutes.
+ARSENAL W.A.N. - Hybrid USB Key Deployment Guide
+[!] NOTICE FOR WINDOWS & MAC USERS (EASY MODE) > If you are a standard user and just want to create the bootable USB, you do not need to compile anything. Please scroll down to the [Quick Flash Guide (Windows/macOS)](https://www.google.com/search?q=%23quick-flash-guide-windowsmacos) at the bottom of this document to download and flash the pre-built image in 2 minutes.
 
 Environment: Debian Forky / Trixie (Root/SysAdmin Mode)
 Target Architecture: Multi-Arch (BIOS Legacy i3/i5 & Modern UEFI x86_64)Method: VFAT + GRUB2 Bridge + Embedded iPXE Auto-Boot
