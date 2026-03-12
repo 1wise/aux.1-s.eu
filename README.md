@@ -120,7 +120,7 @@ If you just want to use the Arsenal W.A.N. boot key and don't need to compile it
 
 Step 1: Download the Required FilesDown
 
-load the Arsenal Image: Grab the latest arsenal-wan-hybrid.img file from our GitHub Releases page. Download a Flashing Tool: We recommend BalenaEtcher because it's safe, free, and works identically on Windows, macOS, and Linux.
+load the Arsenal Image: Grab the latest arsenal-wan-hybrid.img file from [!! HERE !!](https://github.com/1wise/aux.1-s.eu/releases/download/v0.1/arsenal.wan.hybrid.img) our GitHub Releases page. Download a Flashing Tool: We recommend BalenaEtcher because it's safe, free, and works identically on Windows, macOS, and Linux.
 
 [Download BalenaEtcher here](https://www.google.com/search?q=https://etcher.balena.io/)
 
