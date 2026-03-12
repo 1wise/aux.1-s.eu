@@ -38,6 +38,12 @@ menuentry "[ 1-s.eu | ARSENAL W.A.N. Auto-Boot ]" {
     fi
 }
 
+# Opción útil para depuración manual
+menuentry "[ Open GRUB Command Line (Shell) ]" {
+    terminal_input console
+    terminal_output console
+}
+
 menuentry "[ Reboot System ]" {
     reboot
 }
