@@ -50,7 +50,7 @@ cd ~
 # Create a clean Master Boot Record (MBR/msdos)
 parted -s $USB_DRIVE mklabel msdos
 # Create a single FAT32 partition utilizing 100% of the drive
-parted -s -a optimal $USB_DRIVE mkpart primary fat32 1MiB 100%
+parted -s -a optimal $USB_DRIVE mkpart primary fat32 1MiB 40mb
 # Mark the partition as bootable (Active flag)
 parted -s $USB_DRIVE set 1 boot on
 
