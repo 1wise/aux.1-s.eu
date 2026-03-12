@@ -84,19 +84,25 @@ cp bin-x86_64-efi/ipxe.efi /mnt/usb/boot/ipxe/
 3.4 Create GRUB Bridge ConfigurationThis script acts as the intelligence layer. It detects the firmware environment and executes the corresponding native iPXE 
 
 payload.cat << 'EOF' > /mnt/usb/boot/grub/grub.cfg
-set timeout=3
+set timeout=2
 set default=0
-set color_normal=cyan/black
-set color_highlight=black/cyan
+set color_normal=blue/black
+set color_highlight=black/blue
 
 menuentry "[ 1-s.eu | ARSENAL W.A.N. Auto-Boot ]" {
     if [ "${grub_platform}" = "efi" ]; then
-        echo ">> Motherboard firmware: UEFI. Bridging to ipxe.efi..."
+        echo ">> Motherboard detected: UEFI. Loading ipxe.efi..."
         chainloader /boot/ipxe/ipxe.efi
     else
-        echo ">> Motherboard firmware: BIOS Legacy. Bridging to ipxe.lkrn..."
+        echo ">> Motherboard detected: BIOS Legacy. Loading ipxe.lkrn..."
         linux16 /boot/ipxe/ipxe.lkrn
     fi
+}
+
+# Opción útil para depuración manual
+menuentry "[ Open GRUB Command Line (Shell) ]" {
+    terminal_input console
+    terminal_output console
 }
 
 menuentry "[ Reboot System ]" {
